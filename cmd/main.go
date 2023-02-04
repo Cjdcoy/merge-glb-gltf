@@ -1,14 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"github.com/qmuntal/gltf"
 	log "github.com/sirupsen/logrus"
+	"merge-glb-gltf/pkg/gltfMerger"
 	"os"
-	"polyhouse/pkg/gltfMerger"
 )
-
-
 
 func main() {
 	var err error
@@ -16,7 +13,6 @@ func main() {
 	var cube gltf.Document
 	var plane gltf.Document
 	var f *os.File
-	var test []int
 
 	if f, err = os.Open("data/cone.gltf"); err != nil {
 		log.Fatal(err)

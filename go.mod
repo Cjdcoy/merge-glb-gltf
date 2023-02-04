@@ -1,4 +1,4 @@
-module polyhouse
+module merge-glb-gltf
 
 go 1.14
 
